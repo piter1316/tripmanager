@@ -10,11 +10,11 @@ public class TripManager {
 	public static void addTrip(Trip trip) {
 		getTrips.add(trip);
 	}
-
+  
 	public static void removeTrip(Trip trip) {
 		getTrips.remove(trip);
 	}
-
+ 
 	public static Collection<Trip> getTrips() {
 
 		return getTrips;
@@ -22,9 +22,10 @@ public class TripManager {
 	}
 
 	public static String findTrip(String keyword) {
-
-		if (Trip.getDescription().contains(keyword))
-			return "Trip found! " + Trip.getName();
+		
+		
+		if (Trip.getDescription().contains(keyword)) 
+			return "Trip found! " + Trip.getName(); 
 		else
 			return "Nie znaleziono";
 

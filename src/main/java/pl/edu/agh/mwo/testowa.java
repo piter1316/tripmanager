@@ -1,43 +1,36 @@
 package pl.edu.agh.mwo;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class testowa {
 
-	
-//	static String a = "Karaiby na 100";
-//	
-//	
-//	public static String answer(String k) {
-//		
-//		if( a.contains(k))
-//			return "TAK";
-//		
-//		return"NIE";
-//	
-//		
-//	}
-	
-
-	 
-	
-	
-	
 	public static void main(String[] args) {
-//		System.out.println(answer("na"));
 		
-		Trip tr1 = new Trip("w1","Karaiby na 100");
-		Trip tr2 = new Trip("w2","malediwy na 100");
+		Trip tr1 = new Trip();
+		Trip tr2 = new Trip();
 		TripManager.addTrip(tr1);
+		tr1.setDescription("ama");
 		TripManager.addTrip(tr2);
-		System.out.println(TripManager.getTrips());
+		tr2.setDescription("ba");
 		
-		System.out.println(TripManager.getTrips().size());
+//		ArrayList<String> desc = new ArrayList();
+//		desc.add(tr1.getDescription());
+//		desc.add(tr2.getDescription());
+//		
+//		System.out.println(desc);
+		
+		
+		
+		System.out.println(tr1.getDescription());
+		System.out.println(tr2.getDescription());
+		
+		
+		
+		
+		
+		
 	
-//		System.out.println(TripManager.findTrip());
 		
-		
-		
-	}
-
+	}		
 }
-
-
